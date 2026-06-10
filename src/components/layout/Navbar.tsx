@@ -131,6 +131,9 @@ export default function Navbar() {
           <Link href="/shop/products" className="text-charcoal-700 text-base py-3 border-b border-cream-100 font-medium" onClick={() => setMobileOpen(false)}>
             Svi proizvodi
           </Link>
+          <Link href="/shop/o-nama" className="text-charcoal-700 text-base py-3 border-b border-cream-100 font-medium" onClick={() => setMobileOpen(false)}>
+            O nama
+          </Link>
           {categories.map(cat => (
             <Link key={cat.id} href={`/shop/products?category=${cat.slug}`}
               className="text-charcoal-600 text-sm py-3 border-b border-cream-100 pl-4"
